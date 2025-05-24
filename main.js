@@ -21,14 +21,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // 如果没有参数，则隐藏wechat-need-reply部分
         document.getElementById('wechat-need-reply').style.display = 'none';
     }
-    document.querySelectorAll('.copy-btn').forEach(btn => {
-        btn.addEventListener('click', async () => {
-            try {
-                await navigator.clipboard.writeText('小烊队长');
-                alert('复制成功！');
-            } catch (err) {
-                console.error('复制失败:', err);
-            }
-        });
+});
+
+document.querySelectorAll('.copy-btn').forEach(btn => {
+    console.log("点击了")
+    btn.addEventListener('click', async () => {
+        const copyText = btn;
+        const wechatId="小烊队长"
+        console.log(copyText);
+        try {
+            await navigator.clipboard.writeText(wechatId);
+
+            // 视觉反馈
+            copyText.classList.add('copied');
+            copyText.innerHTML ="✅️";
+            setTimeout(() => {
+                copyText.innerHTML ="📋"
+            }, 2000);
+
+
+
+        } catch (err) {
+            console.error('复制失败:', err);
+            copyText.style.background = '#ff4444'; // 错误时变红
+            setTimeout(() => copyText.style.background = '#07C160', 1000);
+        }
     });
 });

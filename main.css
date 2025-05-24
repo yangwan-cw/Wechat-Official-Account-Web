@@ -175,6 +175,24 @@ img.wechat-need-reply-copybtn-img {
   opacity: 0.8;
 }
 
+.copied{
+  /*background: #45d87a; !* 深绿色 *!*/
+  animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
+/*.copied {*/
+/*  text: "✓";*/
+/*  opacity: 1;*/
+/*}*/
+
+
 span#wechat-need-reply-text {
   line-height: 1;
   margin: auto;
