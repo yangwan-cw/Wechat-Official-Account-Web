@@ -3,7 +3,7 @@
   --card-bg: #fff;
   --second-bg: #F7F7F7;
   --font-color: #000;
-  --green: #1ba059;
+  --green: #23C891;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,7 +39,7 @@ body {
   background: var(--card-bg);
   max-width: 428px;
   max-height: 569px;
-  border-radius: 16px;
+  /*border-radius: 16px;*/
   padding: 24px 36px 20px 36px;
   display: flex;
   flex-direction: column;
@@ -165,8 +165,8 @@ img.wechat-need-reply-copybtn-img {
   padding: 12px 12px 12px 20px;
   background: var(--green);
   color: #fff;
-  border-radius: 12px;
-  margin: 8px;
+  /*border-radius: 12px;*/
+  /*margin: 8px;*/
   cursor: pointer;
   transition: 0.3s;
 }
