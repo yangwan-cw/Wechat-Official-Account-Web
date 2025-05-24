@@ -1,4 +1,4 @@
-const oa_name = "张洪Heo";
+const oa_name = "小烊队长";
 const oa_description = "分享设计与科技生活";
 const web_beian = "京ICP备19051325号-2";
 

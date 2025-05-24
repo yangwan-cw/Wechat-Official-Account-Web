@@ -141,6 +141,23 @@ img.wechat-need-reply-copybtn-img {
   height: 20px;
   opacity: 0.6;
   margin-left: 5px;
+
+}
+/* 点击效果 */
+.copy-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.copy-btn:hover .wechat-need-reply-copybtn-img {
+  opacity: 1; /* 悬停时取消透明度 */
+}
+
+.copy-btn:active {
+  transform: scale(0.95); /* 点击缩放动画 */
 }
 
 .wechat-need-reply-copybtn {
